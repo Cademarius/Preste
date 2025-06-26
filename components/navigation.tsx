@@ -81,7 +81,7 @@ export function Navigation() {
                 )}
               </Link>
             ))}
-            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 py-2 text-sm">
+            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 py-2 text-sm rounded">
               <Link href="/get-quote">Parlez-nous de votre besoin</Link>
             </Button>
           </div>
