@@ -10,6 +10,7 @@ import { SectionContainer } from "@/components/ui/section-container"
 import { Button } from "@/components/ui/button"
 import { MessageSquare, Search, Lightbulb, Code, Rocket, BarChart, ArrowRight, CheckCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 const processSteps = [
   {
@@ -172,10 +173,12 @@ export function ProcessSection() {
             Chaque projet est unique. Parlons de vos besoins spécifiques et définissons ensemble la meilleure approche
             pour atteindre vos objectifs.
           </p>
-          <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 sm:px-8 py-3">
-            Planifier un appel stratégique
-            <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-          </Button>
+         <Link href="https://calendly.com/prestehelp/preste-audit">
+            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 sm:px-8 py-3 rounded">
+              Planifier un appel stratégique
+              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </SectionContainer>

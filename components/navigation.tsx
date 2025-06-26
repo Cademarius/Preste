@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const navigation = [
   { name: "Accueil", href: "/" },
@@ -57,9 +58,14 @@ export function Navigation() {
           {/* Logo - Mobile optimized */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-preste-orange to-orange-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-black" />
-              </div>
+              <Image
+                src="/logo-preste.png" 
+                alt="Logo Preste"
+                width={70}
+                height={70}
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg group-hover:scale-110 transition-transform duration-300"
+                priority
+              />
             </div>
             <span className="font-display font-bold text-lg sm:text-xl text-white">PRESTE</span>
           </Link>

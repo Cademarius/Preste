@@ -36,21 +36,23 @@ export function CTASection() {
            <Link href="/get-quote">
             <Button
               size="lg"
-              className="bg-preste-orange hover:bg-orange-600 text-black font-bold px-10 py-5 text-xl group glow-orange transition-all duration-300 shadow-2xl"
+              className="bg-preste-orange hover:bg-orange-600 text-black font-bold px-10 py-5 text-xl group glow-orange transition-all duration-300 shadow-2xl rounded"
             >
               <MessageCircle className="mr-3 w-6 h-6" />
               Parlez-nous de votre besoin
               <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </Button>
           </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white/40 text-white hover:bg-white/10 hover:border-preste-orange/60 px-10 py-5 text-xl transition-all duration-300"
-            >
-              <Calendar className="mr-3 w-6 h-6" />
-              Planifier un appel stratégique
-            </Button>
+            <Link href="https://calendly.com/prestehelp/preste-audit">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white/40 text-white hover:bg-white/10 hover:border-preste-orange/60 px-10 py-5 text-xl transition-all duration-300 rounded"
+              >
+                <Calendar className="mr-3 w-6 h-6" />
+                Planifier un appel stratégique
+              </Button>
+            </Link>
           </div>
 
           <p className="text-white/60 text-lg">
@@ -60,6 +62,7 @@ export function CTASection() {
         </div>
 
         {/* Contact Options */}
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-preste-orange/40 transition-all duration-300 group">
             <MessageCircle className="w-12 h-12 text-preste-orange mb-6 mx-auto group-hover:scale-110 transition-transform" />
@@ -67,12 +70,14 @@ export function CTASection() {
             <p className="text-white/70 mb-6 leading-relaxed">
               Réponse immédiate à vos questions. Notre équipe est disponible pour vous accompagner.
             </p>
-            <Button
-              variant="outline"
-              className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full"
-            >
-              Démarrer le chat
-            </Button>
+            <Link href="/chat">
+              <Button
+                variant="outline"
+                className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full rounded"
+              >
+                Démarrer le chat
+              </Button>
+            </Link>
           </div>
 
           <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-preste-orange/40 transition-all duration-300 group">
@@ -81,12 +86,14 @@ export function CTASection() {
             <p className="text-white/70 mb-6 leading-relaxed">
               30 minutes pour analyser votre projet et définir la stratégie gagnante.
             </p>
-            <Button
-              variant="outline"
-              className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full"
-            >
-              Réserver un créneau
-            </Button>
+            <Link href="https://calendly.com/prestehelp/preste-audit">
+              <Button
+                variant="outline"
+                className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full rounded"
+              >
+                Réserver un créneau
+              </Button>
+            </Link>
           </div>
 
           <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-preste-orange/40 transition-all duration-300 group">
@@ -95,12 +102,14 @@ export function CTASection() {
             <p className="text-white/70 mb-6 leading-relaxed">
               Analyse complète de votre situation et recommandations personnalisées.
             </p>
-            <Button
-              variant="outline"
-              className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full"
-            >
-              Demander un audit
-            </Button>
+            <Link href="https://wa.me/0169718063">
+              <Button
+                variant="outline"
+                className="border-preste-orange/40 text-preste-orange hover:bg-preste-orange hover:text-black font-semibold w-full rounded"
+              >
+                Demander un audit
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

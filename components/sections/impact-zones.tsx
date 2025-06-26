@@ -90,8 +90,8 @@ export function ImpactZones() {
             >
               <MobileCard
                 className={cn(
-                  "cursor-pointer transition-all duration-500",
-                  isActive && "ring-2 ring-preste-orange scale-105",
+                  "cursor-pointer transition-all duration-500 rounded",
+                  isActive && "ring-2 ring-preste-orange scale-105 rounded",
                 )}
               >
                 <div className="flex items-start space-x-4 mb-6">
@@ -128,7 +128,7 @@ export function ImpactZones() {
                   <Link href={`/services#${zone.slug}`}>
                     <Button
                       variant="outline"
-                      className="w-full sm:w-auto border-preste-orange/30 text-preste-orange hover:bg-preste-orange hover:text-black"
+                      className="w-full sm:w-auto border-preste-orange/30 text-preste-orange hover:bg-preste-orange hover:text-black rounded"
                     >
                       Explorer cette zone
                       <ArrowRight className="ml-2 w-4 h-4" />
@@ -154,7 +154,7 @@ export function ImpactZones() {
             </p>
           </div>
           <Link href="/get-quote">
-            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold whitespace-nowrap">
+            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold whitespace-nowrap rounded">
               Démarrer maintenant
             </Button>
           </Link>
