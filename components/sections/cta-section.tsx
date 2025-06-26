@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, MessageCircle, Calendar, Phone, Sparkles, Target } from "lucide-react"
+import Link from "next/link"
 
 export function CTASection() {
   return (
@@ -32,6 +33,7 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+           <Link href="/get-quote">
             <Button
               size="lg"
               className="bg-preste-orange hover:bg-orange-600 text-black font-bold px-10 py-5 text-xl group glow-orange transition-all duration-300 shadow-2xl"
@@ -40,6 +42,7 @@ export function CTASection() {
               Parlez-nous de votre besoin
               <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </Button>
+          </Link>
             <Button
               size="lg"
               variant="outline"

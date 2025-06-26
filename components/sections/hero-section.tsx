@@ -9,6 +9,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Zap, Target, Rocket } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 const dynamicTexts = [
   "Vous cherchez une prestation ?",
@@ -96,20 +97,24 @@ export function HeroSection() {
 
         {/* CTA Buttons - Mobile-first layout */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4">
-          <Button
-            size="lg"
-            className="w-full sm:w-auto bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group transition-all duration-300"
-          >
-            Parlez-nous de votre besoin
-            <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 hover:border-preste-orange/50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300"
-          >
-            Découvrir nos réalisations
-          </Button>
+          <Link href="/get-quote" className="w-full sm:w-auto">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto bg-preste-orange hover:bg-orange-600 text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group transition-all duration-300 rounded"
+            >
+              Parlez-nous de votre besoin
+              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+          <Link href="/case-studies" className="w-full sm:w-auto">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 hover:border-preste-orange/50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 rounded"
+            >
+              Découvrir nos réalisations
+            </Button>
+          </Link>
         </div>
 
         {/* Trust Indicators - Mobile responsive grid */}

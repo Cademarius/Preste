@@ -17,7 +17,6 @@ const processSteps = [
     icon: MessageSquare,
     title: "Écoute & Analyse",
     description: "Nous analysons vos besoins, vos objectifs et votre contexte pour comprendre les enjeux réels.",
-    duration: "1-2 jours",
     deliverables: ["Brief détaillé", "Analyse concurrentielle", "Recommandations stratégiques"],
   },
   {
@@ -25,7 +24,6 @@ const processSteps = [
     icon: Search,
     title: "Audit & Diagnostic",
     description: "Diagnostic complet de votre écosystème digital pour identifier les opportunités d'amélioration.",
-    duration: "2-3 jours",
     deliverables: ["Audit technique", "Analyse UX/UI", "Plan d'optimisation"],
   },
   {
@@ -33,7 +31,6 @@ const processSteps = [
     icon: Lightbulb,
     title: "Stratégie & Conception",
     description: "Élaboration de la stratégie et conception des solutions adaptées à vos objectifs.",
-    duration: "3-5 jours",
     deliverables: ["Stratégie digitale", "Wireframes", "Prototypes interactifs"],
   },
   {
@@ -41,7 +38,6 @@ const processSteps = [
     icon: Code,
     title: "Développement & Création",
     description: "Développement technique et création des contenus avec notre équipe d'experts.",
-    duration: "1-4 semaines",
     deliverables: ["Développement", "Intégrations", "Tests qualité"],
   },
   {
@@ -49,7 +45,6 @@ const processSteps = [
     icon: Rocket,
     title: "Lancement & Déploiement",
     description: "Mise en ligne, formation et accompagnement pour un lancement réussi.",
-    duration: "2-3 jours",
     deliverables: ["Déploiement", "Formation équipe", "Documentation"],
   },
   {
@@ -57,7 +52,6 @@ const processSteps = [
     icon: BarChart,
     title: "Suivi & Optimisation",
     description: "Monitoring des performances et optimisations continues pour maximiser les résultats.",
-    duration: "Continu",
     deliverables: ["Rapports mensuels", "Optimisations", "Support technique"],
   },
 ]
@@ -139,9 +133,6 @@ export function ProcessSection() {
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2 flex-col sm:flex-row gap-2 sm:gap-0">
                         <h3 className="font-display font-bold text-xl sm:text-2xl text-white">{step.title}</h3>
-                        <span className="text-preste-orange font-medium text-sm bg-preste-orange/10 px-3 py-1 rounded-full">
-                          {step.duration}
-                        </span>
                       </div>
                       <p className="text-white/70 leading-relaxed mb-6 text-sm sm:text-base">{step.description}</p>
                     </div>
@@ -164,13 +155,6 @@ export function ProcessSection() {
                           </div>
                         ))}
                       </div>
-                      <Button
-                        variant="outline"
-                        className="w-full sm:w-auto border-preste-orange/30 text-preste-orange hover:bg-preste-orange hover:text-black"
-                      >
-                        En savoir plus
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
                     </div>
                   </div>
                 </MobileCard>

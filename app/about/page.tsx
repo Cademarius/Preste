@@ -1,5 +1,5 @@
 import { AboutHero } from "@/components/sections/about-hero"
-import { TeamSection } from "@/components/sections/team-section"
+import TeamSection from "@/components/sections/team-section"
 import { TimelineSection } from "@/components/sections/timeline-section"
 import { ValuesSection } from "@/components/sections/values-section"
 

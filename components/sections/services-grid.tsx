@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Code, Palette, TrendingUp, Target, Zap, ArrowRight, CheckCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 const serviceCategories = [
   { id: "all", label: "Tous les services", icon: Target },
@@ -23,7 +24,7 @@ const services = [
     title: "Chatbots Intelligents",
     description: "Chatbots conversationnels alimentés par l'IA pour automatiser votre support client et vos ventes.",
     features: ["IA conversationnelle", "Intégration multicanale", "Analytics avancés", "Formation continue"],
-    price: "À partir de 2 500€",
+    price: "À partir de 500€",
     duration: "2-3 semaines",
     icon: Brain,
     color: "from-purple-500 to-purple-700",
@@ -34,7 +35,7 @@ const services = [
     title: "Applications Web",
     description: "Développement d'applications web sur mesure avec les dernières technologies.",
     features: ["React/Next.js", "Backend scalable", "Base de données", "Déploiement cloud"],
-    price: "À partir de 5 000€",
+    price: "À partir de 300€",
     duration: "4-8 semaines",
     icon: Code,
     color: "from-blue-500 to-blue-700",
@@ -45,7 +46,7 @@ const services = [
     title: "Identité Visuelle",
     description: "Création d'identité visuelle complète pour marquer les esprits et se démarquer.",
     features: ["Logo & charte", "Supports print", "Assets digitaux", "Guidelines"],
-    price: "À partir de 1 500€",
+    price: "À partir de 100€",
     duration: "2-3 semaines",
     icon: Palette,
     color: "from-pink-500 to-pink-700",
@@ -56,7 +57,7 @@ const services = [
     title: "Optimisation SEO",
     description: "Stratégie SEO complète pour améliorer votre visibilité et générer du trafic qualifié.",
     features: ["Audit technique", "Stratégie contenu", "Link building", "Suivi performances"],
-    price: "À partir de 1 200€/mois",
+    price: "À partir de 300€/mois",
     duration: "3-6 mois",
     icon: TrendingUp,
     color: "from-green-500 to-green-700",
@@ -67,7 +68,7 @@ const services = [
     title: "Automatisation Workflow",
     description: "Automatisation de vos processus métier pour gagner en efficacité et réduire les erreurs.",
     features: ["Analyse processus", "Outils no-code", "Intégrations API", "Formation équipe"],
-    price: "À partir de 3 000€",
+    price: "À partir de 300€",
     duration: "3-4 semaines",
     icon: Zap,
     color: "from-yellow-500 to-yellow-700",
@@ -78,7 +79,7 @@ const services = [
     title: "Applications Mobiles",
     description: "Applications mobiles natives ou cross-platform pour iOS et Android.",
     features: ["React Native", "UI/UX optimisé", "API backend", "Store deployment"],
-    price: "À partir de 8 000€",
+    price: "À partir de 300€",
     duration: "6-10 semaines",
     icon: Code,
     color: "from-indigo-500 to-indigo-700",
@@ -177,10 +178,12 @@ export function ServicesGrid() {
               Vous ne trouvez pas exactement ce que vous cherchez ? Parlons de votre projet spécifique et créons une
               solution adaptée à vos besoins.
             </p>
-            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-8 py-3">
-              Discuter de mon projet
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+           <Link href="/get-quote">
+              <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-8 py-3">
+                Discuter de mon projet
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

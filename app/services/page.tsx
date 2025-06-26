@@ -1,7 +1,6 @@
 import { ServicesHero } from "@/components/sections/services-hero"
 import { ServicesGrid } from "@/components/sections/services-grid"
 import { ServiceProcess } from "@/components/sections/service-process"
-import { PricingSection } from "@/components/sections/pricing-section"
 
 export default function ServicesPage() {
   return (
@@ -9,7 +8,7 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesGrid />
       <ServiceProcess />
-      <PricingSection />
+      {/* <PricingSection /> */}
     </div>
   )
 }

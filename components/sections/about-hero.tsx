@@ -37,11 +37,6 @@ export function AboutHero() {
                 <div className="text-white/70 text-sm">Support IA</div>
               </div>
             </div>
-
-            <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold">
-              Découvrir notre équipe
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
           </div>
 
           {/* Visual */}

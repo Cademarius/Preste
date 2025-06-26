@@ -119,7 +119,7 @@ export function Navigation() {
                 </Link>
               ))}
               <div className="px-2 pt-4 border-t border-white/10">
-                <Button className="w-full bg-preste-orange hover:bg-orange-600 text-black font-semibold">
+                <Button className="w-full bg-preste-orange hover:bg-orange-600 text-black font-semibold rounded">
                   <Link href="/get-quote">Parlez-nous de votre besoin</Link>
                 </Button>
               </div>

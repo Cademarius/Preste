@@ -6,31 +6,26 @@ const processSteps = [
     icon: MessageSquare,
     title: "Briefing",
     description: "Analyse de vos besoins et définition des objectifs",
-    duration: "1 jour",
   },
   {
     icon: Search,
     title: "Audit",
     description: "Diagnostic de l'existant et identification des opportunités",
-    duration: "2-3 jours",
   },
   {
     icon: Lightbulb,
     title: "Stratégie",
     description: "Conception de la solution optimale avec notre IA",
-    duration: "3-5 jours",
   },
   {
     icon: Code,
     title: "Exécution",
     description: "Développement et création par nos experts",
-    duration: "1-8 semaines",
   },
   {
     icon: Rocket,
     title: "Lancement",
     description: "Déploiement et formation de vos équipes",
-    duration: "2-3 jours",
   },
   {
     icon: BarChart,

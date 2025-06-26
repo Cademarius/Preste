@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap, Target, Brain, Palette, TrendingUp, Code } from "lucide-react"
+import { ArrowRight, Zap, Target, Brain, Palette, TrendingUp, Code, ArrowBigDown } from "lucide-react"
 
 export function ServicesHero() {
   return (
@@ -24,7 +24,7 @@ export function ServicesHero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button className="bg-preste-orange hover:bg-orange-600 text-black font-semibold px-8 py-4 text-lg">
               Découvrir nos solutions
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowBigDown className="ml-2 w-5 h-5" />
             </Button>
             <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg">
               Demander un devis

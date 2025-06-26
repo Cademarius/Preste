@@ -83,57 +83,60 @@ export function ImpactZones() {
           const isActive = activeZone === zone.id
 
           return (
-            <MobileCard
+            <div
               key={zone.id}
-              className={cn(
-                "cursor-pointer transition-all duration-500",
-                isActive && "ring-2 ring-preste-orange scale-105",
-              )}
               onMouseEnter={() => setActiveZone(zone.id)}
               onMouseLeave={() => setActiveZone(null)}
             >
-              <div className="flex items-start space-x-4 mb-6">
-                <div
-                  className={cn(
-                    "p-3 rounded-xl transition-all duration-300 flex-shrink-0",
-                    zone.bgColor,
-                    isActive && "scale-110",
-                  )}
-                >
-                  <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-display font-bold text-xl sm:text-2xl text-white mb-2">{zone.title}</h3>
-                  <p className="text-white/70 leading-relaxed text-sm sm:text-base">{zone.description}</p>
-                </div>
-              </div>
-
-              {/* Features List - Mobile optimized */}
-              <div
+              <MobileCard
                 className={cn(
-                  "transition-all duration-500 overflow-hidden",
-                  isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+                  "cursor-pointer transition-all duration-500",
+                  isActive && "ring-2 ring-preste-orange scale-105",
                 )}
               >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                  {zone.features.map((feature, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      <div className="w-1.5 h-1.5 bg-preste-orange rounded-full flex-shrink-0"></div>
-                      <span className="text-white/80 text-sm">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link href={`/services#${zone.slug}`}>
-                  <Button
-                    variant="outline"
-                    className="w-full sm:w-auto border-preste-orange/30 text-preste-orange hover:bg-preste-orange hover:text-black"
+                <div className="flex items-start space-x-4 mb-6">
+                  <div
+                    className={cn(
+                      "p-3 rounded-xl transition-all duration-300 flex-shrink-0",
+                      zone.bgColor,
+                      isActive && "scale-110",
+                    )}
                   >
-                    Explorer cette zone
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </Link>
-              </div>
-            </MobileCard>
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-display font-bold text-xl sm:text-2xl text-white mb-2">{zone.title}</h3>
+                    <p className="text-white/70 leading-relaxed text-sm sm:text-base">{zone.description}</p>
+                  </div>
+                </div>
+
+                {/* Features List - Mobile optimized */}
+                <div
+                  className={cn(
+                    "transition-all duration-500 overflow-hidden",
+                    isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+                  )}
+                >
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    {zone.features.map((feature, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 bg-preste-orange rounded-full flex-shrink-0"></div>
+                        <span className="text-white/80 text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Link href={`/services#${zone.slug}`}>
+                    <Button
+                      variant="outline"
+                      className="w-full sm:w-auto border-preste-orange/30 text-preste-orange hover:bg-preste-orange hover:text-black"
+                    >
+                      Explorer cette zone
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </MobileCard>
+            </div>
           )
         })}
       </ResponsiveGrid>
